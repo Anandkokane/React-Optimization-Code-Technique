@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import MemoziedExample from './MemoziedExample';
 import UseCallbackParent from './UseCallbackParent';
+import DebouncingExample from './DebouncingExample';
 function App() {
   const [count, setCount] = useState(0)
   return (
@@ -17,7 +18,10 @@ function App() {
 
 
         {/* 2) useCallback example */}
-        <UseCallbackParent />
+        {/* <UseCallbackParent /> */}
+
+        {/* 3) Debouncing Example */}
+        <DebouncingExample/>
       </div>
     </>
   )
