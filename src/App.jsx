@@ -1,17 +1,23 @@
 import { useState } from 'react';
 import './App.css';
-import Child from './Child';
+import MemoziedExample from './MemoziedExample';
+import UseCallbackParent from './UseCallbackParent';
 function App() {
   const [count, setCount] = useState(0)
-  console.log("Parent is component rendered", count);
-
   return (
     <>
       <div className="card">
-        <Child/>
-        <button onClick={() => setCount((count) => count + 1)}>
+        {/* 1) memo exmaple */}
+        {/* <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
+
+        <MemoziedExample name="Anand" /> */}
+
+
+
+        {/* 2) useCallback example */}
+        <UseCallbackParent />
       </div>
     </>
   )
